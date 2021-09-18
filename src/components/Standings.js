@@ -12,7 +12,7 @@ const Standings = () => {
   useEffect(() => {
     const getStandings = async () => {
       try {
-        const { data } = await axios('http://ergast.com/api/f1/current/driverStandings.json')
+        const { data } = await axios('https://ergast.com/api/f1/current/driverStandings.json')
         setStandings(data.MRData.StandingsTable.StandingsLists[0].DriverStandings)
         setRounds(data.MRData.StandingsTable.StandingsLists[0].round)
       } catch (err) {
@@ -26,7 +26,7 @@ const Standings = () => {
     if (e.target.value === '') { //if no user input, display all 
       setFilteredYears(standings)
     } else {
-      const { data } = await axios.get(`http://ergast.com/api/f1/${e.target.value}/driverStandings.json`) //text field simply updates the end point
+      const { data } = await axios.get(`https://ergast.com/api/f1/${e.target.value}/driverStandings.json`) //text field simply updates the end point
       setFilteredYears(data.MRData.StandingsTable.StandingsLists[0].DriverStandings)
       setRounds(data.MRData.StandingsTable.StandingsLists[0].round)
     }
