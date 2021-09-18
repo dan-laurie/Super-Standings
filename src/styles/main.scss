@@ -5,12 +5,13 @@
   height: 100vh;
 }
 h1 {
-  padding-top: 25px;
+  padding-top: 15px;
 }
 
 .intro {
   padding-top: 25px;
   text-align: center;
+  margin-bottom: 3px;
 }
 
 .lewis-div {
@@ -21,7 +22,8 @@ h1 {
 .lewis {
   width: 350px;
   border-radius: 25px;
-  margin-top: 25px;
+  margin-top: 20px;
+  max-width: 300px;
 }
 .home-btn {
   display: flex;
@@ -31,9 +33,28 @@ h1 {
   padding: 10px;
   border-radius: 25px;
   color: white;
-  background-color: rgb(236, 184, 89);
+  background-color: turquoise;
   text-decoration: none;
   margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.git-btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 170px;
+  padding: 10px;
+  border-radius: 25px;
+  color: white;
+  background-color: turquoise;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-bottom: 1px;
+}
+
+.text {
+  text-align: center;
 }
 h4 {
   padding-top: 25px;
@@ -53,7 +74,7 @@ h6 {
 
 select {
   display: flex;
-  background-color: rgb(236, 184, 89);
+  background-color: turquoise;
   border: none;
   color: white;
   // background: white;
@@ -90,17 +111,17 @@ th {
 }
 
 .navbar {
-  background-color: rgb(236, 184, 89);
+  background-color: black;
 }
 .background {
   height: 100vh;
-  background-color: rgb(89, 199, 236);
+  background-color: rgb(29, 31, 31);
   color: white;
 }
 
 .background-home {
   min-height: 90vh;
-  background-color: rgb(89, 199, 236);
+  background-color: rgb(29, 31, 31);
   color: white;
 }
 .fa-flag-checkered {
@@ -111,11 +132,10 @@ th {
 }
 
 footer {
-  background-color: rgb(236, 184, 89);
+  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   hr {
     background-color: rgb(236, 184, 89);
     margin: 0;
