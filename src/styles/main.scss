@@ -1,6 +1,9 @@
 * {
   font-family: "Inconsolata", monospace;
 }
+.site-wrapper {
+  height: 100vh;
+}
 h1 {
   padding-top: 25px;
 }
@@ -8,6 +11,11 @@ h1 {
 .intro {
   padding-top: 25px;
   text-align: center;
+}
+
+.lewis-div {
+  display: flex;
+  justify-content: center;
 }
 
 .lewis {
@@ -91,7 +99,7 @@ th {
 }
 
 .background-home {
-  min-height: 87.25vh;
+  min-height: 90vh;
   background-color: rgb(89, 199, 236);
   color: white;
 }
@@ -100,10 +108,6 @@ th {
 }
 .title {
   text-align: center;
-}
-
-.site-wrapper {
-  min-height: 100vh;
 }
 
 footer {
