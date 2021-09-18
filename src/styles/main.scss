@@ -128,3 +128,13 @@ footer {
     color: red;
   }
 }
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  img {
+    width: 30px;
+  }
+}
