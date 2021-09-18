@@ -1,26 +1,41 @@
 import axios from 'axios'
-import React, { useEffect } from 'react'
-
+import React, { useEffect, useState } from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Home from './components/Home'
+import Standings from './components/Standings'
 function App() {
-
-  useEffect(() => {
-    const getStandings = async () => {
-      try {
-        const { data } = await axios('http://ergast.com/api/f1/current/driverStandings.json')
-        console.log(data.MRData.StandingsTable.StandingsLists[0].DriverStandings)
-      } catch (err) {
-        console.log(err)
-      }
-    }
-    getStandings()
-  }, [])
-
 
 
   return (
     <>
-      <h1>Super Standings</h1>
-      <p>A simple app that displays Formula 1 information past and present!</p>
+      <BrowserRouter>
+        <Navbar/>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/standings">
+            <Standings />
+          </Route>
+
+
+
+
+
+
+
+
+        </Switch>
+    
+    
+    
+    
+    
+    
+    
+      </BrowserRouter>
+     
     </>
   )
 }
