@@ -1,7 +1,7 @@
 import React from 'react' 
 import { Link } from 'react-router-dom'
 import lewis from '../images/hamilton.jpeg'
-
+import logo from '../images/f1-logo.png'
 const Home = () => {
   return (
     <div className="background-home">
@@ -17,7 +17,10 @@ const Home = () => {
         <p>Created as part of an App in a Day Challenge!</p>
         <p>I am currently half way through General Assembly&apos;s Software Engineering Immersive!</p>
         <p>Check out my Git Hub Below!</p>
-        <a className="git-btn" href="https://github.com/dan-laurie" rel="noreferrer" target="_blank">Git Hub</a>
+      </div>
+      <a className="git-btn" href="https://github.com/dan-laurie" rel="noreferrer" target="_blank">Git Hub</a>
+      <div className="f1">
+        <a href="https://www.formula1.com/" rel="noreferrer" target="_blank"><img src={logo} alt="f1-logo" className="f1-image" /></a>
       </div>
     </div>
     
