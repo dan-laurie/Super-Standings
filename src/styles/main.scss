@@ -1,12 +1,126 @@
+* {
+  font-family: "Inconsolata", monospace;
+}
+h1 {
+  padding-top: 25px;
+}
+
+.intro {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.lewis {
+  width: 350px;
+  border-radius: 25px;
+  margin-top: 25px;
+}
+.home-btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 170px;
+  padding: 10px;
+  border-radius: 25px;
+  color: white;
+  background-color: rgb(236, 184, 89);
+  text-decoration: none;
+  margin-top: 25px;
+}
+h4 {
+  padding-top: 25px;
+  text-align: center;
+}
+
+h6 {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.drop-down {
+  display: flex;
+  justify-content: center;
+}
+
+select {
+  display: flex;
+  background-color: rgb(236, 184, 89);
+  border: none;
+  color: white;
+  // background: white;
+}
+
 table {
   // border: 1px solid black;
   border-radius: 25px;
   max-width: 95%;
   border: none;
-  margin-top: 60px;
+  // margin-top: 10px;
+  color: white;
+}
+
+th,
+td {
+  color: white;
 }
 
 .table-div {
   display: flex;
   justify-content: center;
+}
+
+th {
+  text-align: left;
+}
+.nav-item {
+  margin-right: 10px;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.navbar {
+  background-color: rgb(236, 184, 89);
+}
+.background {
+  height: 100vh;
+  background-color: rgb(89, 199, 236);
+  color: white;
+}
+
+.background-home {
+  min-height: 87.25vh;
+  background-color: rgb(89, 199, 236);
+  color: white;
+}
+.fa-flag-checkered {
+  color: white;
+}
+.title {
+  text-align: center;
+}
+
+.site-wrapper {
+  min-height: 100vh;
+}
+
+footer {
+  background-color: rgb(236, 184, 89);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  hr {
+    background-color: rgb(236, 184, 89);
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    color: white;
+  }
+  i {
+    color: red;
+  }
 }
